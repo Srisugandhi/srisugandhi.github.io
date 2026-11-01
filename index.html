@@ -1,0 +1,235 @@
+<title>Dr. Sugandhi K</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Dr. Sugandhi K — Assistant Professor (Selection Grade), Department of Computer Science, Hindustan Institute of Technology and Science, Chennai. Research in computer vision, gait recognition and medical image processing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky identity sidebar on the left, scrolling scholarly record on the right; stacks on phones */
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --ink:#152033; --muted:#5a6578; --line:#dde2ea;
+  --accent:#0e6e6e; --accent-soft:#e3f0ef; --tag:#eef1f6;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --surface:#161d28; --ink:#e6ebf2; --muted:#9aa5b6; --line:#273142;
+  --accent:#5cc2bd; --accent-soft:#163435; --tag:#1d2635; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --surface:#161d28; --ink:#e6ebf2; --muted:#9aa5b6; --line:#273142;
+  --accent:#5cc2bd; --accent-soft:#163435; --tag:#1d2635; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+.wrap{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;padding-block:56px}
+@media (max-width:860px){.wrap{grid-template-columns:1fr;gap:36px;padding-block:28px}}
+
+/* Sidebar */
+aside{position:sticky;top:40px;align-self:start;display:flex;flex-direction:column;gap:20px}
+@media (max-width:860px){aside{position:static}}
+.photo{width:148px;height:148px;border-radius:50%;background:var(--accent-soft);display:grid;place-items:center;
+  font:500 52px/1 var(--display);color:var(--accent);border:1px solid var(--line);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+h1{font:500 2.1rem/1.15 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.role{color:var(--muted);margin:6px 0 0;font-size:.95rem;line-height:1.5}
+.role strong{color:var(--ink);font-weight:500}
+.links{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:16px}
+.links a{display:flex;align-items:center;gap:10px;padding:6px 0;color:var(--ink);font-size:.93rem}
+.links a:hover{color:var(--accent);text-decoration:none}
+.links svg{width:17px;height:17px;flex:none;fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.email{font-family:var(--mono);font-size:.82rem;color:var(--muted);word-break:break-all}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+nav.toc a{color:var(--muted)}
+nav.toc a:hover{color:var(--accent)}
+
+/* Main */
+main{display:flex;flex-direction:column;gap:56px;min-width:0}
+section{scroll-margin-top:24px}
+h2{font:500 1.55rem/1.2 var(--display);margin:0 0 18px;display:flex;align-items:baseline;gap:12px}
+h2 .count{font:400 .78rem var(--mono);color:var(--muted)}
+.lede{font:400 1.22rem/1.6 var(--display);margin:0;max-width:62ch}
+.lede + p{margin:16px 0 0;color:var(--muted);max-width:65ch}
+
+.metrics{display:flex;flex-wrap:wrap;gap:28px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.metric b{display:block;font:500 1.6rem/1 var(--display);font-variant-numeric:tabular-nums}
+.metric span{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 13px;font-size:.88rem;font-weight:500}
+
+/* Publications */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.filters button{font:500 .82rem var(--body);background:transparent;color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:5px 13px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pubs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.pub{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.pub:first-child{border-top:0;padding-top:0}
+.yr{font:500 .85rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.pt{font-weight:500;line-height:1.45;margin:0}
+.pa{color:var(--muted);font-size:.9rem;margin:3px 0 0}
+.pa .me{color:var(--ink);font-weight:600}
+.pv{font-size:.9rem;margin:2px 0 0;font-style:italic;color:var(--muted)}
+.pm{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;align-items:center}
+.tag{font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.06em;background:var(--tag);color:var(--muted);padding:2px 8px;border-radius:4px}
+.tag.award{background:var(--accent-soft);color:var(--accent)}
+.doi{font:400 .78rem var(--mono)}
+
+/* Timelines */
+.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.tl li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px}
+@media (max-width:520px){.tl li,.pub{grid-template-columns:1fr;gap:2px}}
+.when{font:400 .85rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.what{font-weight:500;margin:0}
+.where{color:var(--muted);font-size:.93rem;margin:1px 0 0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px}
+
+footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.82rem}
+</style>
+
+<div class="wrap">
+  <aside>
+    <!-- To add your photo: replace "SK" below with <img src="photo.jpg" alt="Dr. Sugandhi K"> -->
+    <div class="photo" aria-hidden="true">SK</div>
+    <div>
+      <h1>Dr. Sugandhi K</h1>
+      <p class="role"><strong>Assistant Professor (Selection Grade)</strong><br>Department of Computer Science<br>Hindustan Institute of Technology and Science, Chennai, India</p>
+    </div>
+    <div class="links">
+      <a href="https://scholar.google.com/citations?user=UiJwNrMAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6-10-6Z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-9177-0072" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M12.5 8h1.5a4 4 0 0 1 0 8h-1.5V8Z"/></svg>ORCID · 0000-0002-9177-0072</a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=57195481311" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>Scopus</a>
+      <a href="https://www.webofscience.com/wos/author/record/H-7767-2012" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></svg>Web of Science</a>
+      <a href="https://dblp.uni-trier.de/pid/240/2454.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 10h16M4 15h10M4 20h7"/></svg>DBLP</a>
+      <a href="Dr_Sugandhi_K_Academic_CV_2026.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>Curriculum Vitae (PDF)</a>
+      <span class="email">srisugandhi.19@gmail.com</span>
+    </div>
+    <nav class="toc" aria-label="Sections">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+      <a href="#experience">Experience</a><a href="#education">Education</a><a href="#honors">Honors</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about">
+      <p class="lede">I work on machine learning and computer vision for recognising people and reading medical images, with a focus on human gait recognition, retinal and MR image analysis, and sign language recognition.</p>
+      <p>I am an Assistant Professor (Selection Grade) at Hindustan Institute of Technology and Science, Chennai, where I teach artificial intelligence and algorithms to graduate students. I completed my Ph.D. in Computer Science at Kannur University as a DST INSPIRE Fellow, and I review for <em>Multimedia Tools and Applications</em> (Springer) and the <em>International Journal of Image and Graphics</em>.</p>
+      <div class="metrics">
+        <div class="metric"><b>18</b><span>Publications</span></div>
+        <div class="metric"><b>70</b><span>Citations</span></div>
+        <div class="metric"><b>6</b><span>h-index</span></div>
+        <div class="metric"><b>1</b><span>Patent granted</span></div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+      <div class="chips">
+        <span class="chip">Human Gait Recognition</span><span class="chip">Computer Vision</span>
+        <span class="chip">Medical Image Processing</span><span class="chip">Deep Learning</span>
+        <span class="chip">Pattern Recognition</span><span class="chip">Sign Language Recognition</span>
+        <span class="chip">Image Denoising</span>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications <span class="count" id="pubcount"></span></h2>
+      <div class="filters" role="group" aria-label="Filter publications">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="journal" aria-pressed="false">Journal</button>
+        <button type="button" data-f="conference" aria-pressed="false">Conference</button>
+        <button type="button" data-f="chapter" aria-pressed="false">Book chapter</button>
+      </div>
+      <ol class="pubs" id="pubs"></ol>
+    </section>
+
+    <section id="experience">
+      <h2>Academic positions</h2>
+      <ul class="tl">
+        <li><span class="when">2024 – now</span><div><p class="what">Assistant Professor (Selection Grade)</p><p class="where">Department of Computer Science, Hindustan Institute of Technology and Science, Chennai</p></div></li>
+        <li><span class="when">2023 – 2024</span><div><p class="what">Assistant Professor</p><p class="where">Department of CSE, Vignan Foundation for Science, Technology &amp; Research, Guntur</p></div></li>
+        <li><span class="when">2022 – 2023</span><div><p class="what">Guest Faculty</p><p class="where">Department of Computer Science, Central University of Kerala, Kasaragod</p></div></li>
+        <li><span class="when">2015 – 2020</span><div><p class="what">DST INSPIRE Fellow</p><p class="where">Department of Information Technology, Kannur University</p></div></li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="tl">
+        <li><span class="when">2020</span><div><p class="what">Ph.D. in Computer Science</p><p class="where">Kannur University, Kerala · INSPIRE Fellow</p></div></li>
+        <li><span class="when">2014</span><div><p class="what">M.Phil. in Computer Science</p><p class="where">Kannur University · Batch topper</p></div></li>
+        <li><span class="when">2013</span><div><p class="what">M.Sc. in Computer Science</p><p class="where">Central University of Kerala · First rank</p></div></li>
+        <li><span class="when">2011</span><div><p class="what">B.Sc. in Computer Science</p><p class="where">St. Pius X College, Rajapuram (Kannur University)</p></div></li>
+      </ul>
+    </section>
+
+    <div class="two">
+      <section id="honors">
+        <h2>Honors &amp; patent</h2>
+        <ul class="tl">
+          <li><span class="when">2025</span><div><p class="what">Patent granted: Cooling Device</p><p class="where">Design No. 432989-001, Government of India</p></div></li>
+          <li><span class="when">2017</span><div><p class="what">Best Paper Award</p><p class="where">ICTUS 2017, Dubai</p></div></li>
+          <li><span class="when">2015</span><div><p class="what">INSPIRE Fellowship</p><p class="where">Department of Science and Technology, Govt. of India</p></div></li>
+        </ul>
+      </section>
+      <section id="service">
+        <h2>Service &amp; certification</h2>
+        <ul class="tl">
+          <li><span class="when">2024 – now</span><div><p class="what">Reviewer</p><p class="where">Multimedia Tools and Applications (Springer); Int. J. of Image and Graphics</p></div></li>
+          <li><span class="when">2025</span><div><p class="what">Advanced Certification in Data Science &amp; AI</p><p class="where">E&amp;ICT Academy, IIT Guwahati</p></div></li>
+          <li><span class="when">2025</span><div><p class="what">NPTEL: Machine Learning; Data Analytics with Python (Elite)</p><p class="where">IIT Madras; IIT Roorkee</p></div></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>© 2026 Sugandhi K · Last updated November 2026</footer>
+  </main>
+</div>
+
+<script>
+const P=[
+ ["journal",2026,"SignFlow: A CNN Driven System for Real-Time ASL-to-Text Translation","Sugandhi K., Kavya Sree Chowdary Kari","International Journal of Biometrics","10.1504/IJBM.2026.10074006"],
+ ["conference",2024,"Predicting Hate Words and Offensive Language: A Machine Learning Approach","Sugandhi K., R. Uday Kumar Reddy, K. Ravi Kiran Reddy, B. Bella Reddy","8th Int. Conf. on Inventive Systems and Control (ICISC), pp. 205–210","10.1109/ICISC62624.2024.00042"],
+ ["journal",2021,"A Fusion Based Approach for Blood Vessel Segmentation from Fundus Images by Separating Brighter Optic Disc","Farha Fatina Wahid, Sugandhi K., Raju G.","Pattern Recognition and Image Analysis, 31, 811–820","10.1134/S105466182104026X"],
+ ["journal",2021,"A Novel Threshold Based Method for Vessel Intensity Detection and Extraction from Retinal Images","Farha Fatina Wahid, Sugandhi K., Raju G., Debabrata Swain, Biswaranjan Acharya, Manas Ranjan Pradhan","Int. J. of Advanced Computer Science and Applications, 12(6), 546–554","10.14569/IJACSA.2021.0120663"],
+ ["journal",2021,"Statistical Features from Frame Aggregation and Differences for Human Gait Recognition","Sugandhi K., Farha Fatina Wahid, Raju G.","Multimedia Tools and Applications, Springer","10.1007/s11042-021-10655-z"],
+ ["journal",2020,"CUDA Implementation of Non-Local Means Algorithm for GPU Processors","Farha Fatina Wahid, Sugandhi K., Raju G.","Indian J. of Computer Science and Engineering, 11(1), 66–75","10.21817/indjcse/2020/v11i1/201101057"],
+ ["journal",2019,"An Overlap-Based Human Gait Cycle Detection","Sugandhi K., Farha Fatina Wahid, Nikesh P., Raju G.","International Journal of Biometrics, 11(2), 148–159","10.1504/IJBM.2019.099033"],
+ ["chapter",2019,"Discriminative Gait Features Based on Signal Properties of Silhouette Centroids","Sugandhi K., Raju G.","Advances in Computing and Data Sciences (ICACDS 2019), CCIS Vol. 1046, Springer, pp. 680–688","10.1007/978-981-13-9942-8_63"],
+ ["conference",2019,"Inter Frame Statistical Feature Fusion for Human Gait Recognition","Sugandhi K., Farha Fatina Wahid, Raju G.","Int. Conf. on Data Science and Communication (IConDSC 2019)","10.1109/IconDSC.2019.8816977"],
+ ["conference",2019,"An Efficient HOG-Centroid Descriptor for Human Gait Recognition","Sugandhi K., Raju G.","Amity Int. Conf. on Artificial Intelligence (AICAI 2019)","10.1109/AICAI.2019.8701366"],
+ ["journal",2018,"Cluster-Based Non-Local Filters for Colour Image Denoising","Farha Fatina Wahid, Sugandhi K., Raju G.","Int. J. of Digital Signals and Smart Systems, 2(3), 185–201","10.1504/IJDSSS.2018.097306"],
+ ["chapter",2018,"Two Stage Histogram Enhancement Schemes to Improve Visual Quality of Fundus Images","Farha Fatina Wahid, Sugandhi K., Raju G.","Communications in Computer and Information Science, Springer","10.1007/978-981-13-1810-8_1"],
+ ["journal",2017,"Cluster Based Non-Local Approaches for MR Image Denoising","Sugandhi K., Farha Fatina Wahid, Raju G.","Int. J. of Engineering and Future Technology, 14(1), 24–38",""],
+ ["chapter",2017,"Additive Noise Removal by Combining Non Local Means Filtering and a Local Fuzzy Filter – A Fusion Approach","Raju G., Farha Fatina Wahid, Sugandhi K.","Communications in Computer and Information Science, pp. 30–39","10.1007/978-981-10-5427-3_4"],
+ ["chapter",2017,"Feature Extraction Methods for Human Gait Recognition – A Survey","Sugandhi K., Farha Fatina Wahid, Raju G.","Communications in Computer and Information Science, pp. 377–385","10.1007/978-981-10-5427-3_40"],
+ ["conference",2017,"Detection of Human Gait Cycle: An Overlap Based Approach","Sugandhi K., Farha Fatina Wahid, Raju G.","Int. Conf. on Infocom Technologies and Unmanned Systems (ICTUS 2017)","10.1109/ICTUS.2017.8286067","Best Paper Award"],
+ ["conference",2017,"Fusion of Local and Non-Local Filters for Denoising MRI Images","Farha Fatina Wahid, Sugandhi K., Raju G.","Int. Conf. on Infocom Technologies and Unmanned Systems (ICTUS 2017)","10.1109/ICTUS.2017.8286064"],
+ ["chapter",2016,"A Review on Non Local Filtering Approaches for Medical Image Denoising","Farha Fatina Wahid, Sugandhi K., Raju G.","National Conf. on Recent Trends in Computational Intelligence and Image Processing (RCIP 2016)",""]
+];
+const label={journal:"Journal",conference:"Conference",chapter:"Book chapter"};
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function render(f){
+  const rows=P.filter(p=>f==="all"||p[0]===f);
+  document.getElementById("pubs").innerHTML=rows.map(([t,y,ti,au,ve,doi,aw])=>`
+    <li class="pub"><span class="yr">${y}</span><div>
+      <p class="pt">${esc(ti)}</p>
+      <p class="pa">${esc(au).replace("Sugandhi K.",'<span class="me">Sugandhi K.</span>')}</p>
+      <p class="pv">${esc(ve)}</p>
+      <div class="pm"><span class="tag">${label[t]}</span>${aw?`<span class="tag award">${aw}</span>`:""}${doi?`<a class="doi" href="https://doi.org/${doi}" target="_blank" rel="noopener">DOI ${doi}</a>`:""}</div>
+    </div></li>`).join("");
+  document.getElementById("pubcount").textContent=rows.length+(rows.length===1?" item":" items");
+}
+document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  render(b.dataset.f);
+}));
+render("all");
+</script>
